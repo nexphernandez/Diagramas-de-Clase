@@ -2,5 +2,5 @@
 
 ## Ejercicio 1: Sistema de Reservas de Hoteles
 
-<img src="SistemaDeReservasDeHoteles.drawio.png" width="900">
+<img src="Sistema_de_Hoteles.drawio.png" width="900">
 
