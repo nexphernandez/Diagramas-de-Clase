@@ -1,4 +1,4 @@
-package es.ies.puerto.Ejercicio2;
+package es.ies.puerto.Biblioteca;
 
 public class SistemaBibliotecaA {
     
