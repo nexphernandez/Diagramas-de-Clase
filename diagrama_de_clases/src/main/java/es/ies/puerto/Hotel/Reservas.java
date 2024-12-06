@@ -1,14 +1,14 @@
 package es.ies.puerto.Hotel;
 
-import es.ies.puerto.Fecha;
+import java.util.Date;
 import java.util.Objects;
 /**
  * @author nexphernandez
  * @version 1.0.0
  */
 public class Reservas {
-    private Fecha fechaEntrada;
-    private Fecha fechaSalida;
+    private Date fechaEntrada;
+    private Date fechaSalida;
     private Cliente cliente;
     private Habitacion habitacion;
 
@@ -20,31 +20,31 @@ public class Reservas {
 
     /**
      * Constructor de los atributos de la clase
-     * @param fechaEntrada
-     * @param fechaSalida
+     * @param fechaEntrada de la reserva
+     * @param fechaSalida de la reserva
      * @param cliente de la reserva
      * @param habitacion de la reserva
      */
-    public Reservas(Fecha fechaEntrada, Fecha fechaSalida, Cliente cliente, Habitacion habitacion) {
+    public Reservas(Date fechaEntrada, Date fechaSalida, Cliente cliente, Habitacion habitacion) {
         this.fechaEntrada = fechaEntrada;
         this.fechaSalida = fechaSalida;
         this.cliente = cliente;
         this.habitacion = habitacion;
     }
 
-    public Fecha getFechaEntrada() {
+    public Date getFechaEntrada() {
         return this.fechaEntrada;
     }
 
-    public void setFechaEntrada(Fecha fechaEntrada) {
+    public void setFechaEntrada(Date fechaEntrada) {
         this.fechaEntrada = fechaEntrada;
     }
 
-    public Fecha getFechaSalida() {
+    public Date getFechaSalida() {
         return this.fechaSalida;
     }
 
-    public void setFechaSalida(Fecha fechaSalida) {
+    public void setFechaSalida(Date fechaSalida) {
         this.fechaSalida = fechaSalida;
     }
 

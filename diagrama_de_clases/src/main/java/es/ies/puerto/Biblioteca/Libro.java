@@ -14,6 +14,22 @@ public class Libro {
     private boolean disponible;
     private List<String> historial;
 
+    public boolean getDisponible() {
+        return this.disponible;
+    }
+
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
+    }
+
+    public List<String> getHistorial() {
+        return this.historial;
+    }
+
+    public void setHistorial(List<String> historial) {
+        this.historial = historial;
+    }
+
     /**
      * constructor por defecto
      */
