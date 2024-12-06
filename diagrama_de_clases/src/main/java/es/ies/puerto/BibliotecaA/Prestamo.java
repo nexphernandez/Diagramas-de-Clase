@@ -1,4 +1,4 @@
-package es.ies.puerto.Biblioteca;
+package es.ies.puerto.BibliotecaA;
 /**
  * @author nexphernandez
  * @version 1.0.0
@@ -6,6 +6,7 @@ package es.ies.puerto.Biblioteca;
 
 import java.util.Date;
 import java.util.Objects;
+
 
 public class Prestamo {
     private Date fechaPrestamo;

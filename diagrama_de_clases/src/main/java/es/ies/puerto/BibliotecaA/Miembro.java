@@ -1,15 +1,19 @@
-package es.ies.puerto.Biblioteca;
+package es.ies.puerto.BibliotecaA;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-
+/**
+ * @author nexphernandez
+ * @version 1.0.0
+ */
 public class Miembro {
     private String nombre;
     private String id;
     private List<Prestamo> historial;
 
     public Miembro() {
+        this.historial = new ArrayList<>();
     }
 
     public Miembro(String nombre, String id) {
@@ -48,8 +52,8 @@ public class Miembro {
      * Metodo para registrar miembros
      * @param miembro a registrar
      */
-    public void registrarMiembros(Prestamo miembro){
-        historial.add(miembro);
+    public void registrarMiembros(Prestamo prestamo){
+        historial.add(prestamo);
     }
 
     /**
@@ -69,7 +73,7 @@ public class Miembro {
             return false;
         }
         Miembro miembro = (Miembro) o;
-        return Objects.equals(nombre, miembro.nombre) && Objects.equals(id, miembro.id) && Objects.equals(historial, miembro.historial);
+        return Objects.equals(id, miembro.id);
     }
 
     @Override
